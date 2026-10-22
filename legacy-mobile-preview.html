@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Mobile UI Kit 本地预览</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/demo/demo.css" />
+  </head>
+  <body>
+    <main class="demo-shell demo-shell--jd16">
+      <header class="muk-nav-bar muk-nav-bar--safe muk-nav-bar--bordered">
+        <div class="muk-nav-bar__side muk-nav-bar__side--left"><span class="demo-nav-dot">JD</span></div>
+        <div class="muk-nav-bar__title">16.0 移动组件库</div>
+        <div class="muk-nav-bar__side muk-nav-bar__side--right"><span class="muk-badge"><button class="demo-nav-action" type="button" aria-label="更多操作">⋯</button><span class="muk-badge__mark muk-badge__mark--danger muk-badge__mark--dot" aria-label="有新内容"></span></span></div>
+      </header>
+
+      <section class="demo-header demo-header--jd16">
+        <div class="demo-kicker">JD APP 16.0 STYLE</div>
+        <h1 class="demo-title">设计系统落地版</h1>
+        <p class="demo-subtitle">基于你截图目录中的视觉、交互、样式库和资源库结构，沉淀为可双击预览的移动端组件体系。</p>
+        <form class="muk-search-bar" role="search">
+          <div class="muk-search-bar__box">
+            <span class="muk-search-bar__icon" aria-hidden="true"></span>
+            <input class="muk-search-bar__input" placeholder="搜索商品、店铺、优惠" />
+            <button class="muk-search-bar__clear" type="button" aria-label="清空搜索">×</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="demo-section">
+        <div class="muk-notice-bar muk-notice-bar--primary" role="status">
+          <span class="muk-notice-bar__icon" aria-hidden="true"></span>
+          <div class="muk-notice-bar__content">视觉令牌已切换为红色品牌体系，覆盖材质、布局、色彩、文本、圆角、线条和语义规范。</div>
+          <div class="muk-notice-bar__action">规范</div>
+        </div>
+      </section>
+
+      <section class="demo-section">
+        <div class="muk-icon-grid" style="--muk-icon-grid-columns: 5">
+          <button class="muk-icon-grid__item" type="button"><span class="muk-icon-grid__icon">超</span><span class="muk-icon-grid__label">京东超市</span></button>
+          <button class="muk-icon-grid__item" type="button"><span class="muk-icon-grid__icon">券</span><span class="muk-icon-grid__label">领券</span></button>
+          <button class="muk-icon-grid__item" type="button"><span class="muk-icon-grid__icon">鲜</span><span class="muk-icon-grid__label">生鲜</span></button>
+          <button class="muk-icon-grid__item" type="button"><span class="muk-icon-grid__icon">新</span><span class="muk-icon-grid__label">新品</span></button>
+          <button class="muk-icon-grid__item" type="button"><span class="muk-icon-grid__icon">服</span><span class="muk-icon-grid__label">服务</span></button>
+        </div>
+      </section>
+
+      <section class="demo-section">
+        <div class="muk-tabs muk-tabs--navigation muk-tabs--line muk-tabs--equal" data-tabs>
+          <div class="muk-tabs__header">
+            <div class="muk-tabs__nav" role="tablist" aria-label="内容标签">
+              <button class="muk-tabs__tab muk-tabs__tab--active" id="preview-tab-visual" type="button" role="tab" aria-controls="preview-tab-panel" aria-selected="true" tabindex="0" data-tab="visual"><span class="muk-tabs__copy"><span class="muk-tabs__label">特价</span></span></button>
+              <button class="muk-tabs__tab" id="preview-tab-interaction" type="button" role="tab" aria-controls="preview-tab-panel" aria-selected="false" tabindex="-1" data-tab="interaction"><span class="muk-tabs__copy"><span class="muk-tabs__label">首页</span></span></button>
+              <button class="muk-tabs__tab" id="preview-tab-resource" type="button" role="tab" aria-controls="preview-tab-panel" aria-selected="false" tabindex="-1" data-tab="resource"><span class="muk-tabs__copy"><span class="muk-tabs__label">秒送</span></span><span class="muk-tabs__badge">外卖</span></button>
+              <button class="muk-tabs__tab" id="preview-tab-new" type="button" role="tab" aria-controls="preview-tab-panel" aria-selected="false" tabindex="-1" data-tab="new"><span class="muk-tabs__copy"><span class="muk-tabs__label">新品</span></span></button>
+            </div>
+            <div class="muk-tabs__trailing"><button class="demo-tabs-action" type="button" aria-label="搜索">⌕</button></div>
+          </div>
+          <div class="muk-tabs__panel" id="preview-tab-panel" role="tabpanel" aria-labelledby="preview-tab-visual" tabindex="0" data-tab-panel>颜色、文本、圆角、线条、材质和语义化变量已收敛到 CSS Token。</div>
+        </div>
+      </section>
+
+      <section class="demo-section demo-product-grid">
+        <article class="muk-product-card muk-product-card--vertical">
+          <div class="muk-product-card__image">商品图</div>
+          <div class="muk-product-card__content">
+            <div class="muk-product-card__title">自营精选无线降噪耳机 超长续航</div>
+            <div class="muk-product-card__subtitle">旗舰音质 · 当日达</div>
+            <div class="muk-product-card__tags"><span class="muk-tag muk-tag--price muk-tag--outline muk-tag--small">自营</span><span class="muk-tag muk-tag--promotion muk-tag--outline muk-tag--small">满减</span></div>
+            <div class="muk-product-card__meta"><span class="muk-price muk-price--large"><span class="muk-price__current"><span class="muk-price__currency">¥</span><span class="muk-price__integer">299</span><span class="muk-price__decimal">.00</span></span><del class="muk-price__original">¥399.00</del></span><span class="muk-product-card__sales">2万+评价</span></div>
+            <div class="muk-product-card__action"><button class="muk-button muk-button--danger muk-button--small" type="button">抢购</button></div>
+          </div>
+        </article>
+        <article class="muk-product-card muk-product-card--vertical">
+          <div class="muk-product-card__image">商品图</div>
+          <div class="muk-product-card__content">
+            <div class="muk-product-card__title">家用智能扫地机器人 自动集尘</div>
+            <div class="muk-product-card__subtitle">以旧换新立减</div>
+            <div class="muk-product-card__tags"><span class="muk-tag muk-tag--price muk-tag--outline muk-tag--small">PLUS价</span><span class="muk-tag muk-tag--promotion muk-tag--outline muk-tag--small">补贴</span></div>
+            <div class="muk-product-card__meta"><span class="muk-price muk-price--large"><span class="muk-price__current"><span class="muk-price__currency">¥</span><span class="muk-price__integer">1599</span><span class="muk-price__decimal">.00</span></span></span><span class="muk-product-card__sales">99%好评</span></div>
+            <div class="muk-product-card__action"><button class="muk-button muk-button--secondary muk-button--small" type="button">加购</button></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="demo-section">
+        <section class="muk-card">
+          <div class="muk-card__header"><div class="muk-card__title">样式库规范</div><div class="muk-card__extra"><span class="muk-tag muk-tag--price muk-tag--solid muk-tag--small muk-tag--round">Token</span></div></div>
+          <div class="muk-card__body">
+            <div class="demo-stack">
+              <div class="muk-space muk-space--wrap muk-space--sm">
+                <span class="muk-tag muk-tag--primary muk-tag--soft muk-tag--medium">品牌色 #FF0F24</span>
+                <span class="muk-tag muk-tag--price muk-tag--soft muk-tag--medium">价格色 #FF0F24</span>
+                <span class="muk-tag muk-tag--promotion muk-tag--soft muk-tag--medium">促销色 #FFAA01</span>
+                <span class="muk-tag muk-tag--neutral muk-tag--outline muk-tag--medium">中性色</span>
+              </div>
+              <div class="muk-divider"></div>
+              <div class="muk-cell">
+                <div class="muk-cell__content"><div class="muk-cell__label">页面热区</div><div class="muk-cell__description">触控目标不低于 44px，底部操作栏默认适配安全区。</div></div>
+                <div class="muk-cell__value">44px+</div>
+              </div>
+              <div class="muk-cell">
+                <div class="muk-cell__content"><div class="muk-cell__label">圆角层级</div><div class="muk-cell__description">小控件 4/8，卡片 12/16，胶囊 999。</div></div>
+                <div class="muk-cell__value">Radius</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="demo-section">
+        <section class="muk-card">
+          <div class="muk-card__header"><div class="muk-card__title">商品详情操作</div><div class="muk-card__extra"><span class="muk-tag muk-tag--price muk-tag--solid muk-tag--small muk-tag--round">秒杀</span></div></div>
+          <div class="muk-card__body">
+            <div class="demo-stack">
+              <div class="muk-space muk-space--justify-between"><span class="demo-label">价格表达</span><span class="muk-price muk-price--medium"><span class="muk-price__current"><span class="muk-price__currency">¥</span><span class="muk-price__integer" data-total-integer>88</span><span class="muk-price__decimal" data-total-decimal>.90</span></span><span class="muk-price__suffix">到手价</span><del class="muk-price__original">¥129.00</del></span></div>
+              <div class="muk-space muk-space--justify-between"><span class="demo-label">购买数量</span><div class="muk-stepper"><button class="muk-stepper__button" type="button" data-step="minus">−</button><input class="muk-stepper__input" value="1" type="number" data-stepper-value /><button class="muk-stepper__button" type="button" data-step="plus">+</button></div></div>
+              <div class="muk-action-bar muk-action-bar--glass muk-action-bar--light muk-action-bar--safe"><div class="muk-action-bar__left"><div class="muk-space muk-space--sm"><button class="muk-action-bar-item" type="button"><span class="muk-action-bar-item__visual"><span class="muk-action-bar-item__icon">店</span></span><span class="muk-action-bar-item__label">店铺</span></button><button class="muk-action-bar-item" type="button"><span class="muk-action-bar-item__visual"><span class="muk-action-bar-item__icon">客</span><span class="muk-action-bar-item__badge">1</span></span><span class="muk-action-bar-item__label">客服</span></button></div></div><div class="muk-action-bar__actions"><button class="muk-button muk-button--secondary muk-button--medium" type="button">加入购物车</button><button class="muk-button muk-button--danger muk-button--medium" type="button">立即购买</button></div></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="demo-section">
+        <section class="muk-card">
+          <div class="muk-card__header"><div class="muk-card__title">表单与设置</div></div>
+          <div class="muk-card__body">
+            <div class="demo-stack">
+              <label class="muk-input muk-input--medium"><span class="muk-input__label">手机号</span><span class="muk-input__control"><span class="muk-input__addon">+86</span><input class="muk-input__field" placeholder="请输入手机号" /><button class="muk-input__clear" type="button" aria-label="清除输入">×</button></span></label>
+              <label class="muk-input muk-input--medium"><span class="muk-input__label">验证码</span><span class="muk-input__control"><input class="muk-input__field" placeholder="6 位数字" /><span class="muk-input__addon"><button class="muk-button muk-button--secondary muk-button--small" type="button">获取</button></span></span></label>
+              <div class="muk-divider"></div>
+              <div class="muk-cell"><div class="muk-cell__content"><div class="muk-cell__label">消息通知</div><div class="muk-cell__description">接收订单、活动和系统提醒</div></div><div class="muk-cell__value"><button class="muk-switch muk-switch--checked" type="button" role="switch" aria-checked="true" data-switch><span class="muk-switch__thumb"></span></button></div></div>
+              <div class="muk-cell muk-cell--clickable"><div class="muk-cell__content"><div class="muk-cell__label">账号安全</div></div><div class="muk-cell__value">已开启</div><span class="muk-cell__arrow" aria-hidden="true"></span></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="demo-section">
+        <section class="muk-card">
+          <div class="muk-card__header"><div class="muk-card__title">弹层与反馈</div></div>
+          <div class="muk-card__body"><div class="demo-stack"><button class="muk-button muk-button--primary muk-button--medium muk-button--block" type="button" data-toast="提交成功">Toast 轻提示</button><div class="demo-grid"><button class="muk-button muk-button--secondary muk-button--medium" type="button" data-open-sheet>底部弹层</button><button class="muk-button muk-button--ghost muk-button--medium" type="button" data-open-modal>确认弹窗</button></div></div></div>
+        </section>
+      </section>
+
+      <section class="demo-section">
+        <section class="muk-card">
+          <div class="muk-card__header"><div class="muk-card__title">离散按钮尺寸</div><div class="muk-card__extra">24–48DP</div></div>
+          <div class="muk-card__body">
+            <div class="muk-space muk-space--wrap muk-space--sm">
+              <button class="muk-button muk-button--primary muk-button--24" type="button">标签</button>
+              <button class="muk-button muk-button--light muk-button--28" type="button">次要</button>
+              <button class="muk-button muk-button--gray muk-button--32" type="button">灰色</button>
+              <button class="muk-button muk-button--secondary muk-button--36" type="button">购买</button>
+              <button class="muk-button muk-button--white muk-button--40" type="button">白色</button>
+              <button class="muk-button muk-button--primary muk-button--44" type="button">主操作</button>
+              <button class="muk-button muk-button--primary muk-button--48 muk-button--two-line" type="button"><span class="muk-button__content"><span class="muk-button__label">双行按钮</span><span class="muk-button__description">辅助文案</span></span></button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="demo-section">
+        <section class="muk-card">
+          <div class="muk-card__header"><div class="muk-card__title">空状态规范</div></div>
+          <div class="muk-card__body"><div class="muk-empty"><div class="muk-empty__icon" aria-hidden="true">∅</div><div class="muk-empty__title">暂无优惠券</div><div class="muk-empty__description">领取更多福利后会在这里展示</div><div class="muk-empty__action"><button class="muk-button muk-button--secondary muk-button--small" type="button">去领取</button></div></div></div>
+        </section>
+      </section>
+
+      <nav class="muk-tab-bar muk-tab-bar--floating muk-tab-bar--light muk-tab-bar--fixed muk-tab-bar--safe muk-tab-bar--with-leading muk-tab-bar--with-promotion" aria-label="主导航">
+        <div class="muk-tab-bar__leading"><span class="demo-agent">AI</span></div>
+        <div class="muk-tab-bar__body">
+          <button class="muk-tab-bar__item muk-tab-bar__item--active" type="button" aria-current="page"><span class="muk-tab-bar__icon">首</span><span class="muk-tab-bar__label">首页</span></button>
+          <button class="muk-tab-bar__item" type="button"><span class="muk-tab-bar__icon">分</span><span class="muk-tab-bar__label">分类</span></button>
+          <button class="muk-tab-bar__promotion muk-tab-bar__promotion--campaign" type="button" aria-label="领取专属福利" data-toast="福利已领取"><span class="demo-tab-promotion"><strong>领取专属福利</strong><small>抢万元红包</small></span></button>
+          <button class="muk-tab-bar__item" type="button"><span class="muk-badge"><span class="muk-tab-bar__icon">购</span><span class="muk-tab-bar__label">购物车</span><span class="muk-badge__mark muk-badge__mark--danger">1</span></span></button>
+          <button class="muk-tab-bar__item" type="button"><span class="muk-tab-bar__icon">我</span><span class="muk-tab-bar__label">我的</span></button>
+        </div>
+      </nav>
+
+      <div class="muk-floating-buttons muk-floating-buttons--right muk-floating-buttons--fixed muk-floating-buttons--safe" style="--muk-floating-bottom:84px;--muk-floating-gap:12px;--muk-floating-edge:4px" data-floating-group>
+        <span class="muk-floating-button-wrap muk-floating-button-wrap--dismissible" data-floating-marketing>
+          <button class="muk-floating-button muk-floating-button--48 muk-floating-button--light muk-floating-button--marketing" type="button" aria-label="领京豆" data-toast="领京豆"><span class="demo-floating-promo">领京豆</span></button>
+          <button class="muk-floating-button__dismiss" type="button" aria-label="关闭悬浮按钮" data-dismiss-floating>×</button>
+        </span>
+        <span class="muk-floating-button-wrap"><button class="muk-floating-button muk-floating-button--40 muk-floating-button--light muk-floating-button--surface muk-floating-button--with-label" type="button" aria-label="返回顶部" data-scroll-top><span class="muk-floating-button__icon">↑</span><span class="muk-floating-button__label">顶部</span></button></span>
+        <span class="muk-floating-button-wrap"><button class="muk-floating-button muk-floating-button--40 muk-floating-button--light muk-floating-button--surface muk-floating-button--with-label" type="button" aria-label="收起悬浮按钮" data-collapse-floating><span class="muk-floating-button__icon">›</span><span class="muk-floating-button__label">收起</span></button></span>
+      </div>
+    </main>
+
+    <div class="muk-toast-viewport" aria-live="polite" aria-atomic="true"></div>
+
+    <div class="muk-overlay" hidden data-modal>
+      <div class="muk-modal" role="dialog" aria-modal="true">
+        <div class="muk-modal__title">确认操作</div>
+        <div class="muk-modal__body">弹窗适合承载轻量确认、重要提醒和二次操作。</div>
+        <div class="muk-modal__footer"><button class="muk-button muk-button--ghost muk-button--medium" type="button" data-close-modal>取消</button><button class="muk-button muk-button--primary muk-button--medium" type="button" data-close-modal>确认</button></div>
+      </div>
+    </div>
+
+    <div class="muk-overlay" hidden data-sheet>
+      <div class="muk-sheet" role="dialog" aria-modal="true">
+        <div class="muk-sheet__handle" aria-hidden="true"></div>
+        <div class="muk-sheet__title">底部弹层</div>
+        <div class="muk-sheet__body">底部弹层适合移动端选择器、更多操作、半屏表单和内容预览，底部安全区已默认适配。</div>
+        <div class="muk-sheet__footer"><button class="muk-button muk-button--primary muk-button--medium muk-button--block" type="button" data-close-sheet>我知道了</button></div>
+      </div>
+    </div>
+
+    <script>
+      const tabText = {
+        visual: '颜色、文本、圆角、线条、材质和语义化变量已收敛到 CSS Token。',
+        interaction: '默认触控热区不低于 44px，弹层、Toast、数量步进器支持移动端手势节奏。',
+        resource: '金刚区、商品卡、价格、标签、搜索栏等资源可按业务组合。',
+        new: '导航、悬浮按钮和底部工具栏已按新增规范补齐。'
+      };
+
+      const previewTabs = [...document.querySelectorAll('[data-tab]')];
+      const previewTabPanel = document.querySelector('[data-tab-panel]');
+
+      function activatePreviewTab(button, moveFocus = false) {
+        previewTabs.forEach((item) => {
+          const active = item === button;
+          item.classList.toggle('muk-tabs__tab--active', active);
+          item.setAttribute('aria-selected', String(active));
+          item.tabIndex = active ? 0 : -1;
+        });
+        previewTabPanel.textContent = tabText[button.dataset.tab];
+        previewTabPanel.setAttribute('aria-labelledby', button.id);
+        if (moveFocus) button.focus();
+      }
+
+      previewTabs.forEach((button, index) => {
+        button.addEventListener('click', () => activatePreviewTab(button));
+        button.addEventListener('keydown', (event) => {
+          let nextIndex = index;
+          if (event.key === 'ArrowRight') nextIndex = (index + 1) % previewTabs.length;
+          else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + previewTabs.length) % previewTabs.length;
+          else if (event.key === 'Home') nextIndex = 0;
+          else if (event.key === 'End') nextIndex = previewTabs.length - 1;
+          else return;
+          event.preventDefault();
+          activatePreviewTab(previewTabs[nextIndex], true);
+        });
+      });
+
+      document.querySelectorAll('[data-switch]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const nextChecked = button.getAttribute('aria-checked') !== 'true';
+          button.setAttribute('aria-checked', String(nextChecked));
+          button.classList.toggle('muk-switch--checked', nextChecked);
+        });
+      });
+
+      document.querySelectorAll('[data-step]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const input = document.querySelector('[data-stepper-value]');
+          const next = Math.min(9, Math.max(1, Number(input.value || 1) + (button.dataset.step === 'plus' ? 1 : -1)));
+          input.value = next;
+          const total = (next * 88.9).toFixed(2).split('.');
+          document.querySelector('[data-total-integer]').textContent = total[0];
+          document.querySelector('[data-total-decimal]').textContent = `.${total[1]}`;
+        });
+      });
+
+      function openLayer(selector) {
+        const layer = document.querySelector(selector);
+        layer.hidden = false;
+        requestAnimationFrame(() => layer.classList.add('muk-overlay--open'));
+      }
+
+      function closeLayer(selector) {
+        const layer = document.querySelector(selector);
+        layer.classList.remove('muk-overlay--open');
+        setTimeout(() => {
+          layer.hidden = true;
+        }, 180);
+      }
+
+      document.querySelector('[data-open-modal]').addEventListener('click', () => openLayer('[data-modal]'));
+      document.querySelectorAll('[data-close-modal]').forEach((button) => button.addEventListener('click', () => closeLayer('[data-modal]')));
+      document.querySelector('[data-open-sheet]').addEventListener('click', () => openLayer('[data-sheet]'));
+      document.querySelector('[data-close-sheet]').addEventListener('click', () => closeLayer('[data-sheet]'));
+      document.querySelectorAll('.muk-overlay').forEach((layer) => {
+        layer.addEventListener('click', (event) => {
+          if (event.target === layer) {
+            closeLayer(layer.matches('[data-modal]') ? '[data-modal]' : '[data-sheet]');
+          }
+        });
+      });
+
+      document.querySelectorAll('[data-toast]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const viewport = document.querySelector('.muk-toast-viewport');
+          const toast = document.createElement('div');
+          toast.className = 'muk-toast muk-toast--success';
+          toast.innerHTML = '<span class="muk-toast__icon" aria-hidden="true">✓</span><span class="muk-toast__message">' + button.dataset.toast + '</span>';
+          viewport.appendChild(toast);
+          setTimeout(() => toast.remove(), 2200);
+        });
+      });
+
+      document.querySelectorAll('.muk-input__clear, .muk-search-bar__clear').forEach((button) => {
+        button.addEventListener('click', () => {
+          const input = button.closest('.muk-input__control, .muk-search-bar__box').querySelector('input');
+          input.value = '';
+          input.focus();
+        });
+      });
+
+      document.querySelectorAll('.muk-tab-bar__item').forEach((button) => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('.muk-tab-bar__item').forEach((item) => {
+            item.classList.remove('muk-tab-bar__item--active');
+            item.removeAttribute('aria-current');
+          });
+          button.classList.add('muk-tab-bar__item--active');
+          button.setAttribute('aria-current', 'page');
+        });
+      });
+
+      document.querySelector('[data-dismiss-floating]').addEventListener('click', () => {
+        document.querySelector('[data-floating-marketing]').remove();
+      });
+
+      document.querySelector('[data-scroll-top]').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      document.querySelector('[data-collapse-floating]').addEventListener('click', (event) => {
+        const group = document.querySelector('[data-floating-group]');
+        const collapsed = group.classList.toggle('muk-floating-buttons--collapsed');
+        event.currentTarget.setAttribute('aria-label', collapsed ? '展开悬浮按钮' : '收起悬浮按钮');
+        event.currentTarget.querySelector('.muk-floating-button__icon').textContent = collapsed ? '‹' : '›';
+        event.currentTarget.querySelector('.muk-floating-button__label').textContent = collapsed ? '展开' : '收起';
+      });
+    </script>
+  </body>
+</html>
